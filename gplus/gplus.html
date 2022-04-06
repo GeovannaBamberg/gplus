@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G+</title>
+    <link rel="stylesheet" href="/gplus.css">
+</head>
+<script src="gplus.js"></script>
+<body>
+    <header>
+        <div class="cabecalho">
+            <h1>G+ Player</h1>
+            <h2>Recomende </h2>
+        </div>
+    </header>
+    <main class="container">
+        <div class="bordarPlayer">
+            <h3>Crie sua lista de recomendações:</h3>
+            <div class="input">
+                <label for="title-url">Url youtube:</label>
+                <input type="url" id="url">
+                <button onclick="play()">+music</button>
+            </div>
+            <div id="videos" class="videos">
+               <div >
+                <ol id="listaReproducao">
+        
+                </ol>
+               </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
