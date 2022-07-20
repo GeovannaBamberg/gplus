@@ -1,13 +1,24 @@
+var listaDeVideos = []
 function play(){
     var url = document.getElementById("url").value;
-    var adcionarNaLista = document.getElementById("videos")
+    var elementoListaVideos = document.getElementById("videos")
 
-    url= url.replace('https://youtu.be/', 'https://www.youtube.com/embed/');
+    var ajeitandoUrl= url.replace('https://youtu.be/', 'https://www.youtube.com/embed/');
+ 
+    if (ErroDeVideosRepetidos(ajeitandoUrl) == -1) {
+    
+        listaDeVideos.push(ajeitandoUrl)
+        mostrarVideosNaLista(elementoListaVideos,ajeitandoUrl)
+        
+    } else {
+        alert("este video ja foi adicionado")
 
-    adcionarNaLista.insertAdjacentHTML("afterbegin", `<h3> VIDEO </h3><iframe class="configVideo" width="350" height="215" src="${url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    }
+}
+function ErroDeVideosRepetidos(urlVideos) {
+    return listaDeVideos.indexOf(urlVideos)
+} 
+function mostrarVideosNaLista(elementoListaVideos,urlVideos) {
+    return elementoListaVideos.insertAdjacentHTML("afterbegin", `<h3>Video<h3><iframe class="configVideo" width="350" height="215" src="${urlVideos}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     `)
 }
-
-/*function ErroDeVideosRepetidos(params) {
-    
-} */
