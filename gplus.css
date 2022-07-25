@@ -12,42 +12,52 @@ header{
     height: 40px;
     width: auto;
     margin: 0px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
-#iconTitle{
+h1{
     height: 45px;
-    width: 75px;
-    margin: 0px 20px 8px 550px;
-    
+    width: 100px;
+    margin: 0px 20px 8px 900px;
+}
+nav{
+    background-color:#6cc644;
+    height: auto;
+    width:  150px;
+    border-radius: 0px 0px 50px 50px;
+}
+nav:hover{
+    background-color:#539835;
 }
 img{
     height: 25px;
     width: 35px;
-    margin-right: 950px;
-   margin-top: 3px;
+     margin-right: 950px;
+   margin-top: 7px;
    margin-left: 50px;
-   margin-bottom: 5px;
+   margin-bottom: 1px;
 }
 
-img:hover{
-    background-color:#539835;
-    padding: 2px;
-}
+
 
 ul{
     background-color:#6cc644;
     height: auto;
-    width: 170px;
+    width: 150px;
     padding-left: 0px;
     padding-top: 5px;
     margin: 0px;
     list-style: none;
     border-radius: 0px 0px 20px 20px;
     display: none;
+    
+}
+nav:hover ul{
+    display: block;
+    background-color:#539835;
+
 }
 li{
     margin: 7px;
-
 }
 li a{
     text-decoration: none;
@@ -56,10 +66,6 @@ li a{
 li a:hover{
     color: #0e3622;
 }
-img:hover ul{
-    display: block;
-}
-
 main{
     margin: auto;
 }
