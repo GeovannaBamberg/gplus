@@ -1,42 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,500;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body{
-    background-color:#141413 ;
+    background-color:#22272E ;
     font-family: 'Ubuntu', sans-serif;
     color: #ffffff;
     text-align: center;
 
 }
 header{
-    background-color:#05E05E ;
+    background-color:#6cc644;
     height: 40px;
     width: auto;
     margin: 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 h1{
-    text-align: end;
-    margin: 5px 20px 5px 5px;
+    height: 45px;
+    width: 100px;
+    margin: 0px 20px 8px 900px;
+}
+nav{
+    background-color:#6cc644;
+    height: auto;
+    width:  150px;
+    border-radius: 0px 0px 50px 50px;
+}
+nav:hover{
+    background-color:#539835;
+}
+img{
+    height: 25px;
+    width: 35px;
+     margin-right: 950px;
+   margin-top: 7px;
+   margin-left: 50px;
+   margin-bottom: 1px;
+}
+
+
+
+ul{
+    background-color:#6cc644;
+    height: auto;
+    width: 150px;
+    padding-left: 0px;
+    padding-top: 5px;
+    margin: 0px;
+    list-style: none;
+    border-radius: 0px 0px 20px 20px;
+    display: none;
+    
+}
+nav:hover ul{
+    display: block;
+    background-color:#539835;
+
+}
+li{
+    margin: 7px;
+}
+li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+li a:hover{
+    color: #0e3622;
 }
 main{
     margin: auto;
+}
+h2{
+    margin:15px 15px;
 }
 input:focus{
     color: red;
 }
 button{
-    background-color: #05E05E;
-    color: #040605;
-    border-radius: 200px 0px 50px 50px;
+    background-color: #6cc644;
+    color: #f6f6f6;
+    border-radius: 50px;
+    border: none;
 
 }
 button:hover{
     font-size: large;
-    box-shadow: 5px 5px 5px #05e05d21;
+    background-color: #6cc644;
+    box-shadow: 5px 5px 5px #1a387321;
 }
 iframe:hover{
     box-shadow: 5px 5px 5px  #000000c8;
-    height: 420px;
-    width: 820px;
+    height: 320px;
+    width: 580px;
 }
 article{
     margin: 20px;
