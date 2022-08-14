@@ -19,6 +19,6 @@ function ErroDeVideosRepetidos(urlVideos) {
     return listaDeVideos.indexOf(urlVideos)
 } 
 function mostrarVideosNaLista(elementoListaVideos,urlVideos) {
-    return elementoListaVideos.insertAdjacentHTML("afterbegin", `<h3>Video<h3><iframe class="configVideo" width="350" height="215" src="${urlVideos}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    return elementoListaVideos.insertAdjacentHTML("afterbegin", `<iframe class="configVideo" width="350" height="215" src="${urlVideos}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     `)
 }

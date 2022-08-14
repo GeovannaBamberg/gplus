@@ -13,17 +13,17 @@ body{
 header{
     background-color:#6cc644;
     height: 90px;
-    width: auto;
+    width: 98vw;
     margin: 0px;
     border-radius: 10px;
     padding: 0px;
 }
 header img{
     height: 80px;
-    width: 160px;
+    width: 115px;
     position: absolute;
-    left: 6px;
-    top: 5px;
+    left: 33px;
+    top: 7px;
     margin-left: 40px;
 }
 nav{
@@ -34,6 +34,7 @@ nav{
     position: relative;
     align-self: flex-end;
     border-radius: 0px 0px 50px 50px;
+    position: absolute;
 }
 
 label{
@@ -41,7 +42,7 @@ label{
 }
 img{
     height: 25px;
-    width: 35px;
+    width: 30px;
     margin: auto;
 }
 
@@ -68,10 +69,12 @@ li a:hover{
 }
 main{
     margin: auto;
+    width: 90vw;
 }
 h2{
-    margin:15px 15px;
+    margin:30px 15px 15px 15px;
 }
+
 input:focus{
     color: red;
 }
@@ -82,21 +85,23 @@ button{
     border: none;
 
 }
+
 button:hover{
-    font-size: large;
-    background-color: #6cc644;
-    box-shadow: 5px 5px 5px #1a387321;
+    font-size: medium;
+    box-shadow: 2px 2px 2px #1a387321;
 }
 iframe:hover{
-    box-shadow: 5px 5px 5px  #000000c8;
-    height: 320px;
-    width: 580px;
+
+    box-shadow: 2px 2px 1px  #6bc64451;
 }
 article{
     margin: 20px;
 }
 .configVideo{
+    max-width: 70vw;
+    max-height: 60vh;
     margin: 20px;
     background-color: #0e3622;
     
 }
+
