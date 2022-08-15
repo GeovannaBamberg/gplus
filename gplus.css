@@ -1,17 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,500;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --corBackGroundBody: #1E232E;
+    --corBackGroundHeader: #287A70;
+    --corBackGroundTercerario:
+    /* FONTES */
+    --fontePrincipal:  normal normal 2.7vh 'Ubuntu', sans-serif;
+    --corFontes: aliceblue;
+    --corFonteLink: aliceblue;
+     /* sub classes */
+    --corHouverLinks: #191d25;
+    --corFocuosDoInput: red;
+     /* SOMBRAS */
+    --sombras: 5px 5px 5px #1f381539;
+    --sombraIframes: 2px 2px 20px  #1c5f575f;
+
+    /*
+    --corBackGroundBody: #22272E;
+    --corBackGroundHeader: #6cc644;
+    --corBackGroundTercerario: #22272E;
+    */
+}
+
 *{
     margin: 0px;
 }
 body{
-    background-color:#22272E ;
-    font-family: 'Ubuntu', sans-serif;
-    color: #ffffff;
+    background-color:var(--corBackGroundBody); 
+    font: var(--fontePrincipal);
     text-align: center;
-
+    color: var(--corFontes);
 }
 header{
-    background-color:#6cc644;
+    background-color:var(--corBackGroundHeader);
     height: 90px;
     width: 98vw;
     margin: 0px;
@@ -19,15 +40,22 @@ header{
     padding: 0px;
 }
 header img{
-    height: 80px;
-    width: 115px;
+    height: 75px;
+    width: 170px;
     position: absolute;
-    left: 33px;
-    top: 7px;
+    left: 30px;
+    top: 1px;
     margin-left: 40px;
 }
+button img{
+   height: 50px;
+   width: 50px;
+    position: absolute;
+    top: 25px;
+    left: 72vw;
+}
 nav{
-    background-color:#6cc644;
+    background-color:var(--corBackGroundHeader);
     height: auto;
     width:  150px;
     margin-left: 50px;
@@ -35,6 +63,8 @@ nav{
     align-self: flex-end;
     border-radius: 0px 0px 50px 50px;
     position: absolute;
+    border: 1px dash black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.153);
 }
 
 label{
@@ -52,56 +82,65 @@ ul{
     list-style: none;
     border-radius: 0px 0px 20px 20px;
     display: none;
-    
 }
 nav:hover ul{
     display: block;
 }
 li{
     margin: 7px;
+    text-shadow: var(--sombras)
+    
 }
 li a{
+    font-size: 2.8vh;
     text-decoration: none;
-    color: aliceblue;
+    color: var(--corFonteLink);
 }
 li a:hover{
-    color: #1bff8d;
+    color: var(--corHouverLinks);
 }
 main{
     margin: auto;
     width: 90vw;
 }
+#bordarPlayer{
+    display: none;
+    margin-bottom: 20px;
+}
 h2{
-    margin:30px 15px 15px 15px;
+    font-size: 3vh;
+    margin:45px 15px 15px 15px;
 }
 
 input:focus{
-    color: red;
+    color: var(--corFocuosDoInput);
 }
 button{
-    background-color: #6cc644;
-    color: #f6f6f6;
+    background-color: var(--corBackGroundHeader);
+    color: var(--fontePrincipal);
     border-radius: 50px;
     border: none;
-
+    margin-left: 2px;
 }
 
-button:hover{
+div button:hover{
     font-size: medium;
-    box-shadow: 2px 2px 2px #1a387321;
+    box-shadow: var(--sombras)
 }
 iframe:hover{
 
-    box-shadow: 2px 2px 1px  #6bc64451;
+    box-shadow: var(--sombraIframes)
 }
 article{
     margin: 20px;
+    background-color:var(--corBackGroundTercerario);
+    padding: 0px;
+    border-radius: 50px;
+    margin-top: 20px;
 }
 .configVideo{
     max-width: 70vw;
     max-height: 60vh;
-    margin: 20px;
-    background-color: #0e3622;
-    
+    margin: 20px;    
 }
 

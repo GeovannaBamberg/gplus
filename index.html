@@ -11,30 +11,31 @@
 <script src="gplus.js"></script>
 <body>
     <header>
-        <img src="assets/img/iconHeader.png" alt="">
-                    
+        <a href="index.html"><img src="assets/img/iconHeader2.png" alt=""></a>
+        <button type="button" onclick="layoutAdicionarVideo()"> <img src="/assets/img/buttomAdd.png" alt=""></button>
+
+        
     </header>
     
     <nav>
         <img src="assets/img/iconMenu.png" alt="" >
             <ul>
-                    <li><a href="#">pagina principal</a></li>
+                    <li><a href="index.html">pagina principal</a></li>
                     <li><a href="#">contato</a></li>
             </ul>
     </nav>
     <main class="container">
-        <section class="bordarPlayer">
+        <section class="bordarPlayer" id="bordarPlayer">
             <h2>Crie sua lista de recomendações</h2>
             <div class="input">
                 <label for="title-url">URL Youtube</label>
                 <input type="url" id="url">
                 <button onclick="play()">Adicionar</button>
             </div>
-            <article id="videos" class="videos">
-               <div id="listaReproducao"></div>
-            </article>
         </section>
-        
+        <article id="videos" class="videos">
+            <div id="listaReproducao"></div>
+         </article>
     </main>
 </body>
 </html>
