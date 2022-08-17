@@ -65,6 +65,7 @@ nav{
     position: absolute;
     border: 1px dash black;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.153);
+    
 }
 
 label{
@@ -82,10 +83,14 @@ ul{
     list-style: none;
     border-radius: 0px 0px 20px 20px;
     display: none;
+    
+   
 }
 nav:hover ul{
     display: block;
 }
+   
+ 
 li{
     margin: 7px;
     text-shadow: var(--sombras)
@@ -104,8 +109,13 @@ main{
     width: 90vw;
 }
 #bordarPlayer{
-    display: none;
     margin-bottom: 20px;
+}
+.bordarPlayerFechada{
+    display: none;
+}
+.bordarPlayerAberta{
+    display:block;
 }
 h2{
     font-size: 3vh;
@@ -143,4 +153,3 @@ article{
     max-height: 60vh;
     margin: 20px;    
 }
-
