@@ -14,12 +14,6 @@
      /* SOMBRAS */
     --sombras: 5px 5px 5px #1f381539;
     --sombraIframes: 2px 2px 20px  #1c5f575f;
-
-    /*
-    --corBackGroundBody: #22272E;
-    --corBackGroundHeader: #6cc644;
-    --corBackGroundTercerario: #22272E;
-    */
 }
 
 *{
